@@ -99,7 +99,7 @@ public class SimpleGaze: MonoBehaviour
 						_timer = _gazeTime;
 					}
 				} 
-				
+				/*
 				else if (hit.transform.CompareTag("Button")){
 					// Change the cursor material
 					_meshRenderer.material = _interactable;
@@ -108,12 +108,13 @@ public class SimpleGaze: MonoBehaviour
 					if (_timer <= 0){
 						
 						// Code used in class 
-						//hit.transform.gameObject.GetComponent<MyButton>().Acender();
+						hit.transform.gameObject.GetComponent<MyButton>().Acender();
 						
 						_isInteracting = false;
 						_timer = _gazeTime;
 					}
 				} 
+				*/
 				
 				// If we are not looking at an interactable object reset the timer and change the cursor material
 				else{
